@@ -40,6 +40,7 @@
 }
 
 .icon-button {
+  color: gray;
   position: relative;
   font-size: 20px;
   cursor: pointer;
