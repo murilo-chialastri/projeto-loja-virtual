@@ -3,7 +3,11 @@ import { FaShopify, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router";
 
 
-const Header = () => {
+const Header = ({ adicionarCarrinho}) => {
+
+  
+  
+
   return (
     <header className="header">
       <div className="logo"><FaShopify />ReactShop</div>
@@ -24,7 +28,7 @@ const Header = () => {
         <span className="icon-button cart">
           <FaShoppingCart />
 
-          <span className="badge">3</span>
+          <span className="badge">{adicionarCarrinho}</span>
         </span>
       </div>
     </header>
