@@ -13,15 +13,19 @@ const Products = ({ setCart }) => {
         <section id="produtos" className="products">
             <h2>Produtos em destaque</h2>
         
-        <ProductCard
+        
+            <div className="product-list">
+
+            <ProductCard
                 id="1"
                 image="https://placehold.co/240x240/aa3bff/ffffff?text=Tenis"
                 title="Tênis esportivo"
                 category="Calçados"
                 rating="4.5"
                 price="299,90"
+                onAddToCart={addToCart}
         />
-            <div className="product-list">
+
                 <div className="product-card">
                     <img src="https://placehold.co/240x240/aa3bff/ffffff?text=Tenis" alt="Tênis esportivo" />
                     <p className="product-category">Calçados</p>
