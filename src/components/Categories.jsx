@@ -1,6 +1,7 @@
 import { IoShirt, IoPhonePortraitOutline } from "react-icons/io5";
 import { GiConverseShoe } from "react-icons/gi";
 import { FaHatCowboy } from "react-icons/fa6";
+import CategoryCard from "./CategoryCard";
 
 
 
@@ -9,6 +10,10 @@ const Categories = () => {
         <section className="categories">
             <h2>Categorias</h2>
 
+            {/* <CategoryCard
+                icone= "<IoShirt />"
+                texto="Roupas"
+            /> */}
             <div className="category-list">
                 <div className="category-card">
                     <span className="category-icon"> <IoShirt /> </span>
