@@ -9,33 +9,27 @@ const Categories = () => {
     return (
         <section className="categories">
             <h2>Categorias</h2>
-
-            {/* <CategoryCard
-                icone= "<IoShirt />"
-                texto="Roupas"
-            /> */}
             <div className="category-list">
-                <div className="category-card">
-                    <span className="category-icon"> <IoShirt /> </span>
-                    <p>Roupas</p>
-                </div>
+                
+                <CategoryCard
+                    icone= {<IoShirt />}
+                    texto="Roupas"
+                />
+                <CategoryCard
+                    icone= {<IoPhonePortraitOutline />}
+                    texto="Eletrônicos"
+                />
 
-                <div className="category-card">
-                    <span className="category-icon"> <IoPhonePortraitOutline /> </span>
-                    <p>Eletrônicos</p>
-                </div>
+                <CategoryCard
+                    icone= {<GiConverseShoe />}
+                    texto="Calçados"
+                />
 
-                <div className="category-card">
-                    <span className="category-icon"> <GiConverseShoe />
- </span>
-                    <p>Calçados</p>
-                </div>
+                <CategoryCard
+                    icone= {<FaHatCowboy />}
+                    texto="Acessórios"
+                />
 
-                <div className="category-card">
-                    <span className="category-icon"><FaHatCowboy />
-</span>
-                    <p>Acessórios</p>
-                </div>
             </div>
         </section>
     )
