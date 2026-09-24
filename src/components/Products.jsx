@@ -16,51 +16,43 @@ const Products = ({ setCart }) => {
         
             <div className="product-list">
 
-            <ProductCard
-                id="1"
-                image="https://placehold.co/240x240/aa3bff/ffffff?text=Tenis"
-                title="Tênis esportivo"
-                category="Calçados"
-                rating="4.5"
-                price="299,90"
-                onAddToCart={addToCart}
-        />
+                <ProductCard
+                    id="1"
+                    image="https://placehold.co/240x240/aa3bff/ffffff?text=Tenis"
+                    title="Tênis esportivo"
+                    category="Calçados"
+                    rating="4.5"
+                    price="299,90"
+                    onAddToCart={addToCart}
+                />
+                <ProductCard
+                    id="2"
+                    image="https://placehold.co/240x240/3b82f6/ffffff?text=Fone"
+                    title="Fone de Ouvido Bluetooth"
+                    category="Eletrônicos"
+                    rating="4.8"
+                    price="299,90"
+                    onAddToCart={addToCart}
+                />
+                <ProductCard
+                    id="3"
+                    image="https://placehold.co/240x240/22c55e/ffffff?text=Mochila"
+                    title="Mochila para Notebook"
+                    category="Acessórios"
+                    rating="4.2"
+                    price="R$ 189,90"
+                    onAddToCart={addToCart}
+                />
+                <ProductCard
+                    id="4"
+                    image="https://placehold.co/240x240/f97316/ffffff?text=Relogio"
+                    title="Relógio Smartwatch"
+                    category="Eletrônicos"
+                    rating="4.7"
+                    price="R$ 349,90"
+                    onAddToCart={addToCart}
+                />
 
-                <div className="product-card">
-                    <img src="https://placehold.co/240x240/aa3bff/ffffff?text=Tenis" alt="Tênis esportivo" />
-                    <p className="product-category">Calçados</p>
-                    <h3>Tênis Esportivo</h3>
-                    <p className="product-rating">⭐⭐⭐⭐☆ (4.5)</p>
-                    <p className="product-price">R$ 299,90</p>
-                    <button className="btn-secondary" onClick={addToCart}>Adicionar ao carrinho</button>
-                </div>
-
-                <div className="product-card">
-                    <img src="https://placehold.co/240x240/3b82f6/ffffff?text=Fone" alt="Fone de ouvido bluetooth" />
-                    <p className="product-category">Eletrônicos</p>
-                    <h3>Fone de Ouvido Bluetooth</h3>
-                    <p className="product-rating">⭐⭐⭐⭐⭐ (4.8)</p>
-                    <p className="product-price">R$ 149,90</p>
-                    <button className="btn-secondary">Adicionar ao carrinho</button>
-                </div>
-
-                <div className="product-card">
-                    <img src="https://placehold.co/240x240/22c55e/ffffff?text=Mochila" alt="Mochila para notebook" />
-                    <p className="product-category">Acessórios</p>
-                    <h3>Mochila para Notebook</h3>
-                    <p className="product-rating">⭐⭐⭐⭐☆ (4.2)</p>
-                    <p className="product-price">R$ 189,90</p>
-                    <button className="btn-secondary">Adicionar ao carrinho</button>
-                </div>
-
-                <div className="product-card">
-                    <img src="https://placehold.co/240x240/f97316/ffffff?text=Relogio" alt="Relógio smartwatch" />
-                    <p className="product-category">Eletrônicos</p>
-                    <h3>Relógio Smartwatch</h3>
-                    <p className="product-rating">⭐⭐⭐⭐⭐ (4.7)</p>
-                    <p className="product-price">R$ 349,90</p>
-                    <button className="btn-secondary">Adicionar ao carrinho</button>
-                </div>
             </div>
         </section>
     )
